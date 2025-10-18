@@ -11,17 +11,37 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+
+    // 👇 Gör så JSX fungerar som i React 17+
+    "jsx": "react-jsx",
+
+    // 👇 Viktigt för Vitest, Testing Library och Jest-dom
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
+
+    // 👇 Gör @/imports enkla och clean
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
+
     "incremental": true,
+
+    // 👇 Behåll Next plugin
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+
+  // 👇 Lägg till setup-filen så Vitest hittar den
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "vitest.setup.tsx",
+    ".next/types/**/*.ts"
+  ],
+
   "exclude": ["node_modules"]
 }
