@@ -6,7 +6,7 @@ describe("HeroSection", () => {
     render(<HeroSection />)
     expect(
       screen.getByRole("heading", {
-        name: /building ai-powered apps & a swedish golf brand/i,
+        name: /building ai-powered apps/i,
       })
     ).toBeInTheDocument()
   })

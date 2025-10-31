@@ -15,7 +15,7 @@ export default function ProjectsSection() {
         </div>
 
         <div className="rounded-xl border border-gray-200 bg-white/60 p-5 shadow-sm">
-          <h3 className="text-lg font-medium mb-2">In public</h3>
+          <h3 className="text-lg font-medium mb-2">Build Journey</h3>
           <p className="text-sm text-gray-700">
             I share my process on X — from first prototype to launch. Follow along to see what’s next.
           </p>

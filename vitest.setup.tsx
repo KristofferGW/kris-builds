@@ -1,6 +1,7 @@
 import React from "react"
 import { vi } from "vitest"
 import "@testing-library/jest-dom"
+global.React = React
 
 declare global {
   var IS_REACT_ACT_ENVIRONMENT: boolean
