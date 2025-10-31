@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,21 +15,21 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-
     // 👇 Gör så JSX fungerar som i React 17+
-    "jsx": "react-jsx",
-
+    "jsx": "preserve",
     // 👇 Viktigt för Vitest, Testing Library och Jest-dom
-    "types": ["vitest/globals", "@testing-library/jest-dom"],
-
+    "types": [
+      "vitest/globals",
+      "@testing-library/jest-dom"
+    ],
     // 👇 Gör @/imports enkla och clean
     "baseUrl": "src",
     "paths": {
-      "@/*": ["*"]
+      "@/*": [
+        "*"
+      ]
     },
-
     "incremental": true,
-
     // 👇 Behåll Next plugin
     "plugins": [
       {
@@ -33,7 +37,6 @@
       }
     ]
   },
-
   // 👇 Lägg till setup-filen så Vitest hittar den
   "include": [
     "next-env.d.ts",
@@ -42,6 +45,7 @@
     "vitest.setup.tsx",
     ".next/types/**/*.ts"
   ],
-
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

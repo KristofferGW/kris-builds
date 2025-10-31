@@ -6,22 +6,23 @@ export default function ProjectsSection() {
       </h2>
 
       <div className="grid gap-6 sm:grid-cols-2">
-        {/* Micro-apps card */}
         <div className="rounded-xl border border-gray-200 bg-white/60 p-5 shadow-sm">
-          <h3 className="text-lg font-medium mb-2">AI-powered micro-apps</h3>
+          <h3 className="text-lg font-medium mb-2">AI-powered apps</h3>
           <p className="text-sm text-gray-700">
-            Tiny tools that solve real problems — built with AI integrations.
+            Small, focused tools that use AI to solve everyday problems — from coaching to creativity.
           </p>
+          {/* <Link href="/apps" className="mt-3 inline-block text-sm font-medium underline">See projects →</Link> */}
         </div>
 
-        {/* Golf brand card */}
         <div className="rounded-xl border border-gray-200 bg-white/60 p-5 shadow-sm">
-          <h3 className="text-lg font-medium mb-2">Swedish golf brand</h3>
+          <h3 className="text-lg font-medium mb-2">In public</h3>
           <p className="text-sm text-gray-700">
-            Minimalist Swedish golf products — launching soon.
+            I share my process on X — from first prototype to launch. Follow along to see what’s next.
           </p>
+          {/* <Link href="https://x.com/buildsbykris" className="mt-3 inline-block text-sm font-medium underline">Follow updates →</Link> */}
         </div>
       </div>
     </section>
+
   )
 }

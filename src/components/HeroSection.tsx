@@ -6,11 +6,11 @@ export default function HeroSection() {
   return (
     <section id="hero" className="text-center">
       <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold mb-4">
-        Building AI-powered apps & a Swedish golf brand — documenting the journey.
+        Building AI-powered apps — sharing the journey to freedom through tech.
       </h1>
 
       <p className="text-base sm:text-lg text-gray-700 mb-8">
-        I’m Kris — a builder from Sweden sharing my process, wins, and lessons in public.
+        I’m Kris — a builder from Sweden sharing my process, wins, and lessons while creating small, AI-driven tools that make life easier.
       </p>
 
       <div className="flex flex-col items-center gap-5">

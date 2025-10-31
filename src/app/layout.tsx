@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kris Builds",
-  description: "Building AI-powered apps & a Swedish golf brand — documenting the journey.",
+  title: "KrisBuilds — AI-powered apps",
+  description: "Building and sharing small AI-powered apps that solve real problems.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-32x32.png",
